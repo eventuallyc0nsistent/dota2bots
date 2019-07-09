@@ -1,0 +1,4 @@
+witch_doctor_paralyzing_cask
+witch_doctor_voodoo_restoration
+witch_doctor_maledict
+witch_doctor_death_ward

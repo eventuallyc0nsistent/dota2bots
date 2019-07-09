@@ -1,0 +1,4 @@
+warlock_fatal_bonds
+warlock_shadow_word
+warlock_upheaval
+warlock_rain_of_chaos

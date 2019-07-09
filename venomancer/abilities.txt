@@ -1,0 +1,4 @@
+venomancer_venomous_gale
+venomancer_poison_sting
+venomancer_plague_ward
+venomancer_poison_nova

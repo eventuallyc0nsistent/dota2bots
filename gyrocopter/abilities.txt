@@ -1,0 +1,4 @@
+gyrocopter_rocket_barrage
+gyrocopter_homing_missile
+gyrocopter_flak_cannon
+gyrocopter_call_down

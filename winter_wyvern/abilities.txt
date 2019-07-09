@@ -1,0 +1,4 @@
+winter_wyvern_arctic_burn
+winter_wyvern_splinter_blast
+winter_wyvern_cold_embrace
+winter_wyvern_winters_curse

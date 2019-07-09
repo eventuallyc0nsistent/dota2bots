@@ -1,0 +1,6 @@
+rubick_telekinesis
+rubick_fade_bolt
+rubick_arcane_supremacy
+rubick_empty1
+rubick_empty2
+rubick_spell_steal

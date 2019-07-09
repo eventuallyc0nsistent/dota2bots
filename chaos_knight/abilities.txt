@@ -1,0 +1,4 @@
+chaos_knight_chaos_bolt
+chaos_knight_reality_rift
+chaos_knight_chaos_strike
+chaos_knight_phantasm

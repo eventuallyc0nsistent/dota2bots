@@ -1,0 +1,4 @@
+silencer_curse_of_the_silent
+silencer_glaives_of_wisdom
+silencer_last_word
+silencer_global_silence

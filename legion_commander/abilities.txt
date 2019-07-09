@@ -1,0 +1,4 @@
+legion_commander_overwhelming_odds
+legion_commander_press_the_attack
+legion_commander_moment_of_courage
+legion_commander_duel

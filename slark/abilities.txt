@@ -1,0 +1,4 @@
+slark_dark_pact
+slark_pounce
+slark_essence_shift
+slark_shadow_dance

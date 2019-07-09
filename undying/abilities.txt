@@ -1,0 +1,4 @@
+undying_decay
+undying_soul_rip
+undying_tombstone
+undying_flesh_golem

@@ -1,0 +1,5 @@
+phoenix_icarus_dive
+phoenix_fire_spirits
+phoenix_sun_ray
+phoenix_sun_ray_toggle_move
+phoenix_supernova

@@ -1,0 +1,4 @@
+night_stalker_void
+night_stalker_crippling_fear
+night_stalker_hunter_in_the_night
+night_stalker_darkness

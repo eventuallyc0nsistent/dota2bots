@@ -1,0 +1,4 @@
+lycan_summon_wolves
+lycan_howl
+lycan_feral_impulse
+lycan_shapeshift

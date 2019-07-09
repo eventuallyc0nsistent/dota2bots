@@ -1,0 +1,5 @@
+troll_warlord_berserkers_rage
+troll_warlord_whirling_axes_ranged
+troll_warlord_whirling_axes_melee
+troll_warlord_fervor
+troll_warlord_battle_trance

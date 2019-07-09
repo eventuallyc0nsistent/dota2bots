@@ -1,0 +1,5 @@
+life_stealer_rage
+life_stealer_feast
+life_stealer_open_wounds
+life_stealer_assimilate
+life_stealer_infest

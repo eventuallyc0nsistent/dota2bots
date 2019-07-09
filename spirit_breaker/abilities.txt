@@ -1,0 +1,4 @@
+spirit_breaker_charge_of_darkness
+spirit_breaker_bulldoze
+spirit_breaker_greater_bash
+spirit_breaker_nether_strike

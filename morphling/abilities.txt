@@ -1,0 +1,6 @@
+morphling_waveform
+morphling_adaptive_strike_agi
+morphling_adaptive_strike_str
+morphling_morph_agi
+morphling_morph_str
+morphling_replicate

@@ -1,0 +1,4 @@
+tidehunter_gush
+tidehunter_kraken_shell
+tidehunter_anchor_smash
+tidehunter_ravage

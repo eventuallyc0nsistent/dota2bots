@@ -1,0 +1,5 @@
+ogre_magi_fireblast
+ogre_magi_ignite
+ogre_magi_bloodlust
+ogre_magi_unrefined_fireblast
+ogre_magi_multicast

@@ -1,0 +1,4 @@
+vengefulspirit_magic_missile
+vengefulspirit_wave_of_terror
+vengefulspirit_command_aura
+vengefulspirit_nether_swap

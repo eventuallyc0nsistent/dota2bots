@@ -1,0 +1,4 @@
+shadow_shaman_ether_shock
+shadow_shaman_voodoo
+shadow_shaman_shackles
+shadow_shaman_mass_serpent_ward

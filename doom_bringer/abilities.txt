@@ -1,0 +1,6 @@
+doom_bringer_devour
+doom_bringer_scorched_earth
+doom_bringer_infernal_blade
+doom_bringer_empty1
+doom_bringer_empty2
+doom_bringer_doom

@@ -1,0 +1,5 @@
+shredder_whirling_death
+shredder_timber_chain
+shredder_reactive_armor
+shredder_chakram_2
+shredder_chakram

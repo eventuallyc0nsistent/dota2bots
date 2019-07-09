@@ -1,0 +1,4 @@
+storm_spirit_static_remnant
+storm_spirit_electric_vortex
+storm_spirit_overload
+storm_spirit_ball_lightning

@@ -1,0 +1,4 @@
+pugna_nether_blast
+pugna_decrepify
+pugna_nether_ward
+pugna_life_drain

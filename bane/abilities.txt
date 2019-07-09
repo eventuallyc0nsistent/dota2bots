@@ -1,0 +1,4 @@
+bane_enfeeble
+bane_brain_sap
+bane_nightmare
+bane_fiends_grip

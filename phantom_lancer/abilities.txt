@@ -1,0 +1,4 @@
+phantom_lancer_spirit_lance
+phantom_lancer_doppelwalk
+phantom_lancer_phantom_edge
+phantom_lancer_juxtapose

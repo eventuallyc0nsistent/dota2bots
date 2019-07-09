@@ -1,0 +1,4 @@
+batrider_sticky_napalm
+batrider_flamebreak
+batrider_firefly
+batrider_flaming_lasso

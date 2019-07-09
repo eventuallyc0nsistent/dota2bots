@@ -1,0 +1,5 @@
+tusk_ice_shards
+tusk_snowball
+tusk_tag_team
+tusk_walrus_kick
+tusk_walrus_punch

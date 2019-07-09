@@ -1,0 +1,4 @@
+rattletrap_battery_assault
+rattletrap_power_cogs
+rattletrap_rocket_flare
+rattletrap_hookshot

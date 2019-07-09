@@ -1,0 +1,4 @@
+viper_poison_attack
+viper_nethertoxin
+viper_corrosive_skin
+viper_viper_strike

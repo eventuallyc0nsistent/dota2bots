@@ -1,0 +1,5 @@
+lone_druid_spirit_bear
+lone_druid_spirit_link
+lone_druid_savage_roar
+lone_druid_true_form_battle_cry
+lone_druid_true_form

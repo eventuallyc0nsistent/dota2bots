@@ -1,0 +1,6 @@
+techies_land_mines
+techies_stasis_trap
+techies_suicide
+techies_focused_detonate
+techies_minefield_sign
+techies_remote_mines

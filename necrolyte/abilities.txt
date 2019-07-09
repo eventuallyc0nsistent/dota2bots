@@ -1,0 +1,4 @@
+necrolyte_death_pulse
+necrolyte_sadist
+necrolyte_heartstopper_aura
+necrolyte_reapers_scythe

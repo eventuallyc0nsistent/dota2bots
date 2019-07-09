@@ -1,0 +1,4 @@
+bloodseeker_bloodrage
+bloodseeker_blood_bath
+bloodseeker_thirst
+bloodseeker_rupture

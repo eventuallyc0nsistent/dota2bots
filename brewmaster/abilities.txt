@@ -1,0 +1,4 @@
+brewmaster_thunder_clap
+brewmaster_cinder_brew
+brewmaster_drunken_brawler
+brewmaster_primal_split

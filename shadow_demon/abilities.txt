@@ -1,0 +1,5 @@
+shadow_demon_disruption
+shadow_demon_soul_catcher
+shadow_demon_shadow_poison
+shadow_demon_shadow_poison_release
+shadow_demon_demonic_purge

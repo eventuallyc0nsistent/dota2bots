@@ -1,0 +1,5 @@
+nyx_assassin_impale
+nyx_assassin_mana_burn
+nyx_assassin_spiked_carapace
+nyx_assassin_burrow
+nyx_assassin_vendetta

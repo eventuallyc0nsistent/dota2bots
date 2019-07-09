@@ -1,0 +1,4 @@
+juggernaut_blade_fury
+juggernaut_healing_ward
+juggernaut_blade_dance
+juggernaut_omni_slash

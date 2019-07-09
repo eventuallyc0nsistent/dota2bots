@@ -1,0 +1,4 @@
+broodmother_spawn_spiderlings
+broodmother_spin_web
+broodmother_incapacitating_bite
+broodmother_insatiable_hunger

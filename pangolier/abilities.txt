@@ -1,0 +1,4 @@
+pangolier_swashbuckle
+pangolier_shield_crash
+pangolier_lucky_shot
+pangolier_gyroshell

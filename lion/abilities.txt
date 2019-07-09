@@ -1,0 +1,4 @@
+lion_impale
+lion_voodoo
+lion_mana_drain
+lion_finger_of_death

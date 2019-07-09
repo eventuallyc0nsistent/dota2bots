@@ -1,0 +1,5 @@
+visage_grave_chill
+visage_soul_assumption
+visage_gravekeepers_cloak
+visage_stone_form_self_cast
+visage_summon_familiars

@@ -1,0 +1,4 @@
+ursa_earthshock
+ursa_overpower
+ursa_fury_swipes
+ursa_enrage

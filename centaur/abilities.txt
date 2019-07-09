@@ -1,0 +1,4 @@
+centaur_hoof_stomp
+centaur_double_edge
+centaur_return
+centaur_stampede

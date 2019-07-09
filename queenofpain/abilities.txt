@@ -1,0 +1,4 @@
+queenofpain_shadow_strike
+queenofpain_blink
+queenofpain_scream_of_pain
+queenofpain_sonic_wave

@@ -1,0 +1,4 @@
+pudge_meat_hook
+pudge_rot
+pudge_flesh_heap
+pudge_dismember

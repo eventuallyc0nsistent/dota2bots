@@ -1,0 +1,4 @@
+magnataur_shockwave
+magnataur_empower
+magnataur_skewer
+magnataur_reverse_polarity

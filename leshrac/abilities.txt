@@ -1,0 +1,4 @@
+leshrac_split_earth
+leshrac_diabolic_edict
+leshrac_lightning_storm
+leshrac_pulse_nova

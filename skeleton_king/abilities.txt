@@ -1,0 +1,4 @@
+skeleton_king_hellfire_blast
+skeleton_king_vampiric_aura
+skeleton_king_mortal_strike
+skeleton_king_reincarnation

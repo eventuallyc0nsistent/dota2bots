@@ -1,0 +1,4 @@
+sniper_shrapnel
+sniper_headshot
+sniper_take_aim
+sniper_assassinate

@@ -1,0 +1,4 @@
+dazzle_poison_touch
+dazzle_shallow_grave
+dazzle_shadow_wave
+dazzle_bad_juju

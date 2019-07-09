@@ -1,0 +1,4 @@
+alchemist_acid_spray
+alchemist_unstable_concoction
+alchemist_goblins_greed
+alchemist_chemical_rage

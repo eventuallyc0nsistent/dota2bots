@@ -1,0 +1,5 @@
+treant_natures_guise
+treant_leech_seed
+treant_living_armor
+treant_eyes_in_the_forest
+treant_overgrowth

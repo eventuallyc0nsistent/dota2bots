@@ -1,0 +1,4 @@
+abaddon_death_coil
+abaddon_aphotic_shield
+abaddon_frostmourne
+abaddon_borrowed_time

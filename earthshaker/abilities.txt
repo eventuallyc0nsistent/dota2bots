@@ -1,0 +1,4 @@
+earthshaker_fissure
+earthshaker_enchant_totem
+earthshaker_aftershock
+earthshaker_echo_slam

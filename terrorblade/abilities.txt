@@ -1,0 +1,4 @@
+terrorblade_reflection
+terrorblade_conjure_image
+terrorblade_metamorphosis
+terrorblade_sunder

@@ -1,0 +1,6 @@
+templar_assassin_refraction
+templar_assassin_meld
+templar_assassin_psi_blades
+templar_assassin_trap
+templar_assassin_trap_teleport
+templar_assassin_psionic_trap

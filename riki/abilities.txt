@@ -1,0 +1,4 @@
+riki_smoke_screen
+riki_blink_strike
+riki_permanent_invisibility
+riki_tricks_of_the_trade

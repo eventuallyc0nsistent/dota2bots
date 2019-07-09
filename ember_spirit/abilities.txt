@@ -1,0 +1,5 @@
+ember_spirit_searing_chains
+ember_spirit_sleight_of_fist
+ember_spirit_flame_guard
+ember_spirit_activate_fire_remnant
+ember_spirit_fire_remnant

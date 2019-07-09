@@ -1,0 +1,4 @@
+huskar_inner_fire
+huskar_burning_spear
+huskar_berserkers_blood
+huskar_life_break

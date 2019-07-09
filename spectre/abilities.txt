@@ -1,0 +1,6 @@
+spectre_spectral_dagger
+spectre_desolate
+spectre_dispersion
+spectre_reality
+spectre_haunt_single
+spectre_haunt
