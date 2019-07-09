@@ -8,16 +8,14 @@ function GetHeroName(npcBot)
     local playerId = npcBot:GetPlayerID();
     local npcHeroName = GetSelectedHeroName(playerId);
     local heroName = '';
-
     local names = {}
+
     for i in string.gmatch(npcHeroName, "([^_]+)") do
         table.insert(names, i);
     end
 
     return table.concat(names, '_', 4)
 end
-
-
 
 function AbilityUsageThink()
     local npcBot = GetBot();

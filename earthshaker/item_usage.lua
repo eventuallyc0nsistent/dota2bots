@@ -13,6 +13,8 @@ function ItemUsage.Think()
         ItemsHelper.heal(npcBot, item);
         ItemsHelper.mana(npcBot, item);
         ItemsHelper.blinkToEnemy(npcBot, item, 4, 12);
+        ItemsHelper.blackKingBar(npcBot, item);
+
     end
 
     return

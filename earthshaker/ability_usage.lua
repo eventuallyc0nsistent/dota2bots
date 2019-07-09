@@ -81,27 +81,30 @@ function AbilityUsage.Totem(npcBot, skill)
 end
 
 function AbilityUsage.Ult(npcBot, skill)
+
+    -- TODO: fix this
     if Helper.IsChannelingAbility(npcBot) or ItemsHelper.IsSkillOnCooldown(skill) then
         return
     end
 
     local skillMana = Helper.GetSkillMana(npcBot, skill);
     local manaLimit = skillMana + 0.1;
-    print(skill:GetCastRange());
-    local enemyHeroes = npcBot:GetNearbyHeroes(skill:GetCastRange(), true, BOT_MODE_NONE);
-    local creeps = #npcBot:GetNearbyLaneCreeps(skill:GetCastRange(), true);
+    local ultRange = 300;
+
+
+    local enemyHeroes = npcBot:GetNearbyHeroes(ultRange, true, BOT_MODE_NONE);
+    local creeps = #npcBot:GetNearbyLaneCreeps(ultRange, true);
 
     -- chasing lone enemy
     if Helper.IsLoneLowHealthEnemy(enemyHeroes) then
         useAbility = true;
     elseif #enemyHeroes > 3 then
         useAbility = true;
-    elseif #\\ > 2 and creeps > 8 then
+    elseif #enemyHeroes > 2 and creeps > 8 then
         useAbility = true;
     end
 
-    if Helper.IsSkillActive(skill) and 
-        (Helper.GetMana(npcBot) > manaLimit) then
+    if Helper.IsSkillActive(skill) and ItemsHelper.HasMana(npcBot, skill) then
 
         npcBot:Action_UseAbility(skill);
         return

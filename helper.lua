@@ -19,6 +19,7 @@
 -- BOT_MODE_ROSHAN,             -- 18
 -- BOT_MODE_ITEM,               -- 19
 -- BOT_MODE_WARD,               -- 20
+
 local Helper = {};
 
 function Helper.GetSkillMana(npcBot, skill)

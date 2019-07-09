@@ -15,26 +15,9 @@ function ItemUsage.Think()
         ItemsHelper.heal(npcBot, item);
         ItemsHelper.mana(npcBot, item);
         ItemsHelper.blinkToEnemy(npcBot, item, 2, 5);
-        ItemsHelper.bladeMail(npcBot, item, 3);
-
-        if (itemName == "item_force_staff") then
-
-            if ItemsHelper.IsSkillOnCooldown(item) then
-                return
-            end
-            if #enemyHeroes > 1 or health < 0.6 or npcBot:WasRecentlyDamagedByAnyHero(1.0) or npcBot:WasRecentlyDamagedByCreep(1.0) then
-                npcBot:Action_UseAbilityOnEntity(item, npcBot);
-            end
-
-        elseif (itemName == "item_black_king_bar") then
-
-            if ItemsHelper.IsSkillOnCooldown(item) then
-                return
-            end
-            if #enemyHeroes >= 1 or npcBot:WasRecentlyDamagedByAnyHero(1.0) then
-                npcBot:Action_UseAbility(item);
-            end
-        end
+        ItemsHelper.bladeMail(npcBot, item, 1);
+        ItemsHelper.blackKingBar(npcBot, item);
+        ItemsHelper.forceStaff(npcBot, item);
 
     end
 

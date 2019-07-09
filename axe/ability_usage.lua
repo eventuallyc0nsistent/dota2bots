@@ -87,7 +87,6 @@ function AbilityUsage.AxeUlt(npcBot, ult)
             Helper.UseAbilityOnEntity(npcBot, ult, enemy);
             return
         end
-
     end
 end
 
