@@ -19,6 +19,7 @@ end
 
 function AbilityUsageThink()
     local npcBot = GetBot();
+
     local heroName = GetHeroName(npcBot);
     local AbilityUsage = require(GetScriptDirectory() .. "/"..heroName.."/ability_usage");
     AbilityUsage.Think();

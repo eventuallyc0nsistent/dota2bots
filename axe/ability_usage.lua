@@ -1,5 +1,6 @@
 local Helper = require(GetScriptDirectory() .. "/helper");
 local ItemsHelper = require(GetScriptDirectory() .. "/helper_items");
+local AbilityHelper = require(GetScriptDirectory() .. "/helper_abilities");
 
 local AbilityUsage = {}
 local Abilities = {
@@ -10,69 +11,30 @@ local Abilities = {
 };
 
 
-function AbilityUsage.AxeCall(npcBot, call)
-    
-    -- TODO: call near tower
-    if Helper.IsChannelingAbility(npcBot) or ItemsHelper.IsSkillOnCooldown(call) then
-        return
-    end
-
-    local callRadius = 300;
-    local useAbility = nil;
-
-    local enemyHeroes = npcBot:GetNearbyHeroes(callRadius, true, BOT_MODE_NONE);
-    local creeps = #npcBot:GetNearbyLaneCreeps(callRadius, true);
-
-    -- chasing lone enemy
-    if Helper.IsLoneLowHealthEnemy(enemyHeroes) then
-        useAbility = true;
-
-    elseif #enemyHeroes > 1 then
-        useAbility = true;
-    elseif (#enemyHeroes + creeps) > 3 then
-        useAbility = true;
-    end
-
-    if useAbility ~= nil then
-        local skillMana = Helper.GetSkillMana(npcBot, call);
-        local manaLimit = skillMana + 0.1;
-
-        if Helper.IsSkillActive(call) and 
-            (Helper.GetMana(npcBot) > manaLimit) then
-
-            npcBot:Action_UseAbility(call);
-            return
-        end
-    end
+function AbilityUsage.AxeCall(npcBot, skill)
+    AbilityHelper.useInArea(npcBot, skill, 300, 1, 3);
 end
 
 
-function AbilityUsage.AxeHunger(npcBot, hunger)
-    
-    if Helper.IsChannelingAbility(npcBot) or ItemsHelper.IsSkillOnCooldown(hunger) then
-        return
-    end
-
-    local enemyHeroes = npcBot:GetNearbyHeroes(hunger:GetCastRange(), true, BOT_MODE_NONE);
-    if #enemyHeroes >= 1 then
-        Helper.UseAbilityOnEntity(npcBot, hunger, enemyHeroes[1]);
-        return
-    end
+function AbilityUsage.AxeHunger(npcBot, skill)
+    AbilityHelper.useOnTargetEnemy(npcBot, skill, skill:GetCastRange(), 1);
 end
 
-function AbilityUsage.AxeUlt(npcBot, ult)
+function AbilityUsage.AxeUlt(npcBot, skill)
     
-    if Helper.IsChannelingAbility(npcBot) or ItemsHelper.IsSkillOnCooldown(ult) then
+    if Helper.IsChannelingAbility(npcBot) or 
+        ItemsHelper.IsSkillOnCooldown(skill) or
+        not Helper.IsSkillActive(skill) or
+        not ItemsHelper.HasMana(npcBot, skill) then
         return
     end
 
-    -- ult
-    local enemyHeroes = npcBot:GetNearbyHeroes(ult:GetCastRange(), true, BOT_MODE_NONE);
+    local enemyHeroes = npcBot:GetNearbyHeroes(skill:GetCastRange(), true, BOT_MODE_NONE);
     if #enemyHeroes < 1 then
         return
     end
 
-    local skillLvl = ult:GetLevel();
+    local skillLvl = skill:GetLevel();
     local ultReady = nil;
     for key, enemy in pairs(enemyHeroes) do
         if enemy:GetHealth() <= 250 and skillLvl == 1 then
@@ -84,7 +46,7 @@ function AbilityUsage.AxeUlt(npcBot, ult)
         end
 
         if ultReady ~= nil then
-            Helper.UseAbilityOnEntity(npcBot, ult, enemy);
+            Helper.UseAbilityOnEntity(npcBot, skill, enemy);
             return
         end
     end
@@ -95,7 +57,6 @@ function AbilityUsage.Think()
 
     local call = npcBot:GetAbilityByName(Abilities[1]);
     local hunger = npcBot:GetAbilityByName(Abilities[2]);
-    local helix = npcBot:GetAbilityByName(Abilities[3]);
     local ult = npcBot:GetAbilityByName(Abilities[4]);
 
     AbilityUsage.AxeUlt(npcBot, ult);

@@ -33,3 +33,10 @@ function UpdateRoshanDesire()
 end
 
 ----------------------------------------------------------------------------------------------------
+
+
+function UpdateRoamDesire()
+	
+	return { 0.5 };
+
+end

@@ -9,6 +9,7 @@ function ItemUsage.Think()
     local enemyHeroes = nil;
     local creeps = nil; 
 
+    ItemsHelper.teleport(npcBot);
     for i = 0,5 do
         local item = npcBot:GetItemInSlot(i);
 

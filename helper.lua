@@ -30,6 +30,13 @@ function Helper.GetMana(npcBot)
     return npcBot:GetMana()/npcBot:GetMaxMana();
 end
 
+function Helper.GetFountainLoc(team)
+    if team == TEAM_RADIANT then
+        return Vector(-7093, -6542)
+    end
+    return Vector(7015, 6534)
+end
+
 
 function Helper.IsSkillActive(skill)
     if skill:GetLevel() > 0 then
@@ -54,6 +61,10 @@ function Helper.IsChannelingAbility(npcBot)
         return true;
     end
     return false;
+end
+
+function Helper.IsLowHealth(entity)
+    return entity:GetHealth()/entity:GetMaxHealth() < 0.2
 end
 
 function Helper.IsLoneLowHealthEnemy(enemyHeroes)
