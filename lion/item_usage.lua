@@ -4,6 +4,7 @@ local ItemsHelper = require(GetScriptDirectory() .. "/helper_items");
 local ItemUsage = {}
 
 function ItemUsage.Think()
+
     local npcBot = GetBot();
 
     ItemsHelper.teleport(npcBot);
@@ -11,10 +12,6 @@ function ItemUsage.Think()
         local item = npcBot:GetItemInSlot(i);
         ItemsHelper.heal(npcBot, item);
         ItemsHelper.mana(npcBot, item);
-        ItemsHelper.blinkToEnemy(npcBot, item, 4, 12);
-        ItemsHelper.blackKingBar(npcBot, item);
-        ItemsHelper.euls(npcBot, item);
-
     end
 
     return

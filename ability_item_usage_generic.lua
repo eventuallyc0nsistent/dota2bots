@@ -31,6 +31,16 @@ function ItemUsageThink()
     local npcBot = GetBot();
     local heroName = GetHeroName(npcBot);
     local ItemUsage = require(GetScriptDirectory() .. "/"..heroName.."/item_usage");
+    local ItemsHelper = require(GetScriptDirectory() .. "/helper_items");
+
+    ItemsHelper.teleport(npcBot);
+    for i = 0,5 do
+        local item = npcBot:GetItemInSlot(i);
+
+        ItemsHelper.heal(npcBot, item);
+        ItemsHelper.mana(npcBot, item);
+    end
+
     ItemUsage.Think();
 end
 

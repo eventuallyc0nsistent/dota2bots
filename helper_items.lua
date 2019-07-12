@@ -44,26 +44,9 @@ end
 function ItemsHelper.teleport(npcBot)
     local i = npcBot:FindItemSlot('item_tpscroll');
     local item = npcBot:GetItemInSlot(i);
-
-    local playerId = npcBot:GetPlayerID();
-    local npcHeroName = GetSelectedHeroName(playerId);
-
     -- getLastLocation of hero
     -- if he hasnt moved in a while then send him to fountain
 
-    -- for k, v in pairs(_G) do
-    --     if k == 'npcHeroes' then
-    --         -- print(#v);
-    --         -- for i, j in pairs(v) do
-    --         --     print(i, j)
-    --         -- end
-    --     end
-    -- end
-    -- if npcHeroes[npcHeroName] == nil then
-    --     -- print(npcHeroName);
-    --     table.insert(npcHeroes, npcHeroName);
-    -- end
-    
     if item ~=nil or
         ItemsHelper.IsSkillOnCooldown(item) or
         not ItemsHelper.HasMana(npcBot, item) then
@@ -71,8 +54,13 @@ function ItemsHelper.teleport(npcBot)
     end
 
 
-    -- local location = Helper.GetFountainLoc(npcBot:GetTeam());
-    -- npcBot:Action_UseAbilityOnLocation(item, location);
+    local location = Helper.GetFountainLoc(npcBot:GetTeam());
+    local health = npcBot:GetHealth() / npcBot:GetMaxHealth();
+    local enemyHeroes = Helper.GetNearbyEnemies(npcBot, 1000);
+
+    if health < 0.2 and #enemyHeroes < 1 then
+        npcBot:Action_UseAbilityOnLocation(item, location);
+    end
 end
 
 function ItemsHelper.heal(npcBot, item)

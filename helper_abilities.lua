@@ -52,7 +52,12 @@ function AbilityHelper.useOnTargetLocation(npcBot, skill, range, enemyHeroesNum,
     local enemyHeroes = npcBot:GetNearbyHeroes(range, true, BOT_MODE_NONE);
     local creeps = npcBot:GetNearbyLaneCreeps(range, true);
 
-    if #enemyHeroes > enemyHeroesNum then
+    -- chasing lone enemy
+    if Helper.IsLoneLowHealthEnemy(enemyHeroes) then
+        useAbility = true;
+        location = enemyHeroes[1]:GetLocation()
+
+    elseif #enemyHeroes > enemyHeroesNum then
         useAbility = true
         location = enemyHeroes[1]:GetLocation()
 
@@ -94,7 +99,12 @@ function AbilityHelper.useOnTargetEnemy(npcBot, skill, range, enemyHeroesNum, cr
     local enemyHeroes = npcBot:GetNearbyHeroes(range, true, BOT_MODE_NONE);
     local creeps = npcBot:GetNearbyLaneCreeps(range, true);
 
-    if #enemyHeroes > enemyHeroesNum then
+    -- chasing lone enemy
+    if Helper.IsLoneLowHealthEnemy(enemyHeroes) then
+        useAbility = true;
+        target = enemyHeroes[1]
+
+    elseif #enemyHeroes > enemyHeroesNum then
         for key, enemy in pairs(enemyHeroes) do
             if Helper.IsLowHealth(enemy) then
                 useAbility = true

@@ -1,4 +1,10 @@
 import os
+dota_heroes_wip = [
+    'axe', 
+    'sven', 
+    'shadow_shaman', 
+    'earthshaker'
+]
 
 def add_usage_content(filename, sample_file):
 
