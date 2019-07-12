@@ -28,4 +28,4 @@ $ mv $botsDir $botsDir.old
 $ mkdir $botsDir
 ```
 
-Edit the `abilities_usage.lua` to build abilities and `item_usage` to 
+Edit the `abilities_usage.lua` to build abilities and `item_usage.lua` to build out how bots use items.
